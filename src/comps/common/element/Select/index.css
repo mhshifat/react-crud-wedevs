@@ -1,0 +1,113 @@
+.select-group {
+  margin: 20px 0;
+}
+
+.select-container {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.select-container svg {
+  font-size: 12px;
+  cursor: pointer;
+  color: #6b6b6b;
+}
+
+.select-selected {
+  text-align: left;
+  flex: 1;
+  overflow-y: hidden;
+  overflow-x: auto;
+  outline: none;
+  border: none;
+}
+
+.select-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fff;
+  list-style: none;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  transition: all 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 0;
+}
+
+.select-icon {
+  transition: transform 0.2s ease;
+}
+
+.select-icon.open {
+  transform: rotate(180deg);
+}
+
+.select-options.open {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+.select-options li {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.select-options li:hover {
+  background: rgb(245, 245, 245);
+}
+
+.select-label {
+  text-align: left;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #6b6b6b;
+}
+
+.select-selected__item {
+  margin-right: 10px;
+  background: #fafafa;
+}
+
+.select-selected__item svg {
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+  transition: all 0.2s ease;
+}
+
+.select-selected__item:hover svg {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.select-input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+}

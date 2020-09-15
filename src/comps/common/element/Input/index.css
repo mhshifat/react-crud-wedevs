@@ -1,0 +1,25 @@
+.input-text {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-text:focus {
+  border: 1px solid #181818;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+.input-label {
+  text-align: left;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #6b6b6b;
+}

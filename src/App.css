@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.post-header-title {
+  color: #282c34;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.post-card-cats {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.post-card-cats span {
+  margin-right: 10px;
+}
